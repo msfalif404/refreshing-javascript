@@ -1,0 +1,1 @@
+document.getElementById("myElm").innerHTML += "Belajar";

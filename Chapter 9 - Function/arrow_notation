@@ -1,0 +1,15 @@
+const kuadrat = (a) => {
+  return a * a;
+}
+
+console.log(kuadrat(5));
+
+const kuadrat2 = (a) => a * a;
+console.log(kuadrat2(5));
+
+const kuadrat3 = a => a * a;
+console.log(kuadrat(5));
+
+const salam = (kapan = "Pagi", siapa = "Kawan") => `Selamat ${kapan}, ${siapa}`;
+console.log(salam())
+console.log(salam("Malam","Musuh"));

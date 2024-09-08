@@ -1,0 +1,11 @@
+function avg(...num){
+  let total = 0;
+  for(let value of num){
+    total += value;
+  }
+  
+  return total / num.length;
+}
+
+console.log(avg(1,2));
+console.log(avg(1,2,3,4,5,6));

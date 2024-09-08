@@ -1,0 +1,9 @@
+function avg(a,b){
+  return (a + b) / 2;
+}
+
+function sum(c, d){
+  return c + d(4,8);
+}
+
+console.log(sum(6, avg));

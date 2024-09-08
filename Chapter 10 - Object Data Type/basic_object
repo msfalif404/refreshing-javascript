@@ -1,0 +1,10 @@
+let mobil = {
+  nama: "Toyota Avanza",
+  tipe: "MVP",
+  harga: 5000,
+  warna: "red",
+  pergi: (tempat) => `Pergi ke ${tempat}`
+}
+
+console.log(mobil.nama);
+console.log(mobil.pergi("Bogor"));

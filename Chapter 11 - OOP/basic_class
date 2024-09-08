@@ -1,0 +1,22 @@
+class Mobil {
+  constructor(nama, tipe, harga){
+    this.nama = nama;
+    this.tipe = tipe;
+    this.harga = harga;
+    this.matikan = () => `Mesin ${this.nama} telah dimatikan`;
+  }
+  
+  hidupkan(){
+    return `Mesin ${this.nama} dihidupkan`;
+  }
+  pergi(tempat){
+    return `Pergi ke ${tempat} dengan ${this.nama}`;
+  }
+  
+}
+
+let mobilAndi = new Mobil("Daihatsu Xenia", "MPV, 5000");
+console.log(mobilAndi.nama);
+console.log(mobilAndi.hidupkan());
+console.log(mobilAndi.pergi("Jakarta"));
+console.log(mobilAndi.matikan());

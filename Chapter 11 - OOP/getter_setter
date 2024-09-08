@@ -1,0 +1,21 @@
+class Mobil {
+  constructor(nama, tipe, harga){
+    this.nama = nama;
+    this.tipe = tipe;
+    this.harga = harga;
+  }
+  
+  get namaMobil(){
+    return this.nama.toUpperCase();
+  }
+  
+  set namaMobil(x){
+    this.nama = "Mobil " + x;
+  }
+}
+
+let mobilRudi = new Mobil("Mitsubishi Pajero Sport", "SUV", 5000);
+console.log(mobilRudi.namaMobil)
+
+mobilRudi.namaMobil = "Toyota Fortuner";
+console.log(mobilRudi.namaMobil);

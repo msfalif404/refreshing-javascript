@@ -1,0 +1,24 @@
+class Mobil {
+  constructor(nama){
+    this.nama = nama;
+  }
+  
+  infoMobil(){
+    return `Mobil ${this.nama}`;
+  }
+}
+
+class Bus extends Mobil {
+  constructor(nama){
+    super(nama);
+  }
+  
+  infoBus(){
+    return `Bus ${this.nama}`;
+  }
+}
+
+let busBobi = new Bus("Angkot");
+console.log(busBobi.nama);
+console.log(busBobi.infoMobil());
+console.log(busBobi.infoBus());

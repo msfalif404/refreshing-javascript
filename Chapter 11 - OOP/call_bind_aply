@@ -1,0 +1,19 @@
+let mobilBudi = {
+  nama: "Suzuki Ertiga",
+  tipe: "MVP",
+  cekData(warna, tahun){
+    return `Mobil ${this.nama} ${warna} bertipe ${this.tipe} tahun ${tahun}`
+  }
+};
+
+let mobilJoni = {
+  nama: "Toyota Rush",
+  tipe: "SUV"
+};
+
+console.log(mobilBudi.cekData("Merah", 2012));
+console.log(mobilBudi.cekData.apply(mobilJoni, ["putih", 2015]));
+console.log(mobilBudi.cekData.call(mobilJoni, "hitam", 2010));
+
+let dataMobilJoni = mobilBudi.cekData.bind(mobilJoni, "Silver", 2022);
+console.log(dataMobilJoni());

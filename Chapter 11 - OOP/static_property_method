@@ -1,0 +1,16 @@
+class Mobil {
+  static jumlahMobil = 0;
+  constructor(){
+    Mobil.jumlahMobil += 1;
+  }
+  
+  static infoMobil(){
+    return "Ini dari class Mobil";
+  }
+}
+
+let mobil1 = new Mobil();
+let mobil2 = new Mobil();
+
+console.log(Mobil.jumlahMobil);
+console.log(Mobil.infoMobil());

@@ -1,0 +1,8 @@
+let mobil = {
+  nama: "Mobil 1",
+  harga: 5000
+};
+
+for (let prop in mobil){
+  console.log(mobil[prop]);
+}

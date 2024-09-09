@@ -1,0 +1,28 @@
+const cekKabisat = (tahun) => {
+  if(!Number.isFinite(tahun)){
+    throw new TypeError(`${tahun} tidak memiliki tipe data angka`);
+  }
+  else if(tahun <= 0){
+    throw new RangeError(`${tahun} harus tahun setelah masehi`);
+  }
+  else if(tahun % 4 === 0){
+    return `${tahun} adalah tahun kabisat`;
+  }
+  else {
+    return `${tahun} bukan tahun kabisat`;
+  }
+};
+
+try {
+  console.log(cekKabisat("Ayam"));
+  cosole.log(cekKabisat("1945"));
+  console.log(cekKabisat(-1));
+  console.log(cekKabisat(2022));
+  console.log(cekKabisat(1945));
+}
+catch(e){
+  console.log(`Ada ${e.name} dengan pesan "${e.message}"`);
+}
+finally {
+  console.log("Semuanya Selesai");
+}

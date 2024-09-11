@@ -1,0 +1,5 @@
+let foo = "100 + 30";
+console.log(foo);
+
+let bar = eval(foo);
+console.log(bar);
